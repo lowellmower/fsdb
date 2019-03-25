@@ -1,3 +1,6 @@
+use fsdb::db::*;
+
 fn main() {
-    println!("Hello, world!");
+    let b = Bucket::new("bucket_uid".to_string());
+    println!("{:?}", b);
 }
